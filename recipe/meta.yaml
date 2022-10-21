@@ -14,7 +14,7 @@ source:
 
 build:
   merge_build_host: True  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -33,8 +33,9 @@ requirements:
 
 test:
   commands:
-    - $R -e "library('loon')"           # [not win]
-    - "\"%R%\" -e \"library('loon')\""  # [win]
+    - $R -e "library('loon')"                 # [not (win or linux)]
+    - xvfb-run -a -- $R -e "library('loon')"  # [linux]
+    - "\"%R%\" -e \"library('loon')\""        # [win]
 
 about:
   home: https://great-northern-diver.github.io/loon/
