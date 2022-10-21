@@ -33,8 +33,9 @@ requirements:
 
 test:
   commands:
-    - $R -e "library('loon')"           # [not win]
-    - "\"%R%\" -e \"library('loon')\""  # [win]
+    - $R -e "library('loon')"                 # [not (win or linux)]
+    - xvfb-run -a -- $R -e "library('loon')"  # [linux]
+    - "\"%R%\" -e \"library('loon')\""        # [win]
 
 about:
   home: https://great-northern-diver.github.io/loon/
