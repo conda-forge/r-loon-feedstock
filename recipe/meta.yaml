@@ -1,4 +1,4 @@
-{% set version = '1.4.0' %}
+{% set version = "1.4.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/loon_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/loon/loon_{{ version }}.tar.gz
-  sha256: 56258c8261298484cf7671685f4426f70bc02052176418e069f14c6c00fefb69
+  sha256: c2b62f1dd67e81a2b0c40575b3f9433a01f9455c55c56f194eb1775a7000c524
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/

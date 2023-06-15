@@ -1,11 +1,11 @@
-About r-loon
-============
+About r-loon-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-loon-feedstock/blob/main/LICENSE.txt)
 
 Home: https://great-northern-diver.github.io/loon/
 
 Package license: GPL-2.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-loon-feedstock/blob/main/LICENSE.txt)
 
 Summary: An extendable toolkit for interactive data visualization and exploration.
 
